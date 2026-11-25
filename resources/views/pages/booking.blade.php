@@ -4,7 +4,27 @@
         .list-view {
             margin-top: 5rem;
         }
-
+        #list-phong {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #list-phong::before,
+        #list-phong::after {
+            display: none;
+        }
+        #list-phong > .col-md-4 {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        #list-phong > .col-md-4 > div {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        #list-phong > .col-md-4 .desc {
+            flex: 1;
+        }
     </style>
 @endsection
 @section('content')
@@ -19,7 +39,7 @@
                     class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
                     <div class="fh5co-intro fh5co-table-cell">
                         <h1 class="text-center">ĐẶT PHÒNG CÙNG CHÚNG TÔI</h1>
-                        <p>Khách sạn UTT hân hạnh được phục vụ bạn</p>
+                        <p>Dookki Homestay hân hạnh được phục vụ bạn</p>
                     </div>
                 </div>
             </div>
@@ -40,11 +60,11 @@
                                         align-items: center width: 100%;
                                         background-color: white">
                         <div class="a-col">
-                            Chọn loại phòng
+                            Chọn loại căn
                             <select name="" id="" class="form-control"
                                 style="color: #db4118; font-weight: 16px; font-weight: 700;"
                                 onchange="changeLoaiPhong(this.value)">
-                                <option value="" disabled selected>Chọn loại phòng</option>
+                                <option value="" disabled selected>Chọn loại căn</option>
                                 @foreach ($loaiphong as $lp)
                                     <option value="{{ $lp->id }}">{{ $lp->tenloaiphong }}</option>
                                 @endforeach

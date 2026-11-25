@@ -10,10 +10,10 @@
                         <div class="col-md-12 col-md-offset-0 text-center slider-text">
                             <div class="slider-text-inner js-fullheight">
                                 <div class="desc">
-                                    <p><span>KHÁCH SẠN SpaceX</span></p>
-                                    <h2>Chào mừng bạn đến với khách sạn SpaceX</h2>
+                                    <p><span>Dookki Homestay</span></p>
+                                    <h2>Chào mừng bạn đến với Dookki Homestay</h2>
                                     <p>
-                                        <a href="{{ route('booking') }}" class="btn btn-primary btn-lg">ĐẶT PHÒNG NGAY</a>
+                                        <a href="{{ route('booking') }}" class="btn btn-primary btn-lg">ĐẶT  NGAY</a>
                                     </p>
                                 </div>
                             </div>
@@ -30,7 +30,7 @@
                                     <h2>Hãy liên hệ với chúng tôi, để được nhận những dịch vụ và ưu đãi tốt nhất
                                     </h2>
                                     <p>
-                                        <a href="{{ route('booking') }}" class="btn btn-primary btn-lg">ĐẶT PHÒNG NGAY</a>
+                                        <a href="{{ route('booking') }}" class="btn btn-primary btn-lg">ĐẶT  NGAY</a>
                                     </p>
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                                     <p><span>VỀ CHÚNG TÔI</span></p>
                                     <h2>Tìm hiểu về chúng tôi để có chúng ta hiểu nhau hơn</h2>
                                     <p>
-                                        <a href="{{ route('booking') }}" class="btn btn-primary btn-lg">ĐẶT PHÒNG NGAY</a>
+                                        <a href="{{ route('booking') }}" class="btn btn-primary btn-lg">ĐẶT  NGAY</a>
                                     </p>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                 <select class="form-control" id="select-loai-phong" name="loaiphong"
                                     style="color: #db4118; font-weight: 16px; font-weight: 700;"
                                     onchange="changeLoaiPhong(this.value)">
-                                    <option value="" disabled selected>Chọn loại phòng</option>
+                                    <option value="" disabled selected>Chọn loại căn</option>
                                     @foreach ($loaiphong as $lp)
                                         <option value="{{ $lp->id }}">{{ $lp->tenloaiphong }}</option>
                                     @endforeach
@@ -219,7 +219,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h2>DỊCH VỤ KHÁCH SẠN</h2>
+                        <h2>TIỆN ÍCH & TRẢI NGHIỆM</h2>
                     </div>
                 </div>
             </div>
@@ -287,13 +287,13 @@
                                 <div class="col-md-6">
                                     <span class="super-heading-sm">Đẳng cấp thể giới</span>
                                     <h3 class="heading">BARS</h3>
-                                    <p>Bar SpaceX có phong cách thiết kế hiện đại, dàn hệ thống âm thanh đẳng cấp
+                                    <p>Bar Dookki Homestay có phong cách thiết kế hiện đại, dàn hệ thống âm thanh đẳng cấp
                                         quốc tế. Bạn có thể thỏa sức phiêu theo điệu nhạc cùng những ánh sáng
                                         lung linh huyền ảo. Mỗi tuần bar Hà Nội nổi tiếng nhất đều tổ chức các
                                         sự kiện. Trong đó có sự góp mặt của nhiều ca sĩ, DJ nổi tiếng nên thu
                                         hút rất đông lượng khách. Đội ngũ nhân viên phục vụ khá tận tình, chu
                                         đáo.</p>
-                                    <p>Đến bar SpaceX nổi tiếng nhất Hà Nội, bạn sẽ có dịp thưởng thức nhiều loại
+                                    <p>Đến bar Dookki Homestay nổi tiếng nhất Hà Nội, bạn sẽ có dịp thưởng thức nhiều loại
                                         thức uống với mùi vị độc đáo.</p>
                                     <p class="service-hour">
                                         <span>Giở mở cửa</span>
@@ -312,7 +312,7 @@
                                 <div class="col-md-6">
                                     <span class="super-heading-sm">Đẳng cấp thể giới</span>
                                     <h3 class="heading">ĐƯA ĐÓN</h3>
-                                    <p>Khách sạn SpaceX cung cấp một đội xe cao cấp trong suốt thời gian Quý khách
+                                    <p>Dookki Homestay cung cấp một đội xe cao cấp trong suốt thời gian Quý khách
                                         lưu trú tại Hà Nội, bao gồm đưa đón tại sân bay quốc tế Nội Bài, phương
                                         tiện vận chuyển hàng ngày.</p>
                                     <p>Sử dụng dịch vụ đưa đón khách tại sân bay của chúng tôi để tránh mọi lừa
@@ -336,7 +336,7 @@
                                 <div class="col-md-6">
                                     <span class="super-heading-sm">Đẳng cấp thể giới</span>
                                     <h3 class="heading">BỂ BƠI</h3>
-                                    <p>Bể bơi SpaceX là khu bể bơi ở Hà Nội hàng đầu, luôn được đông đảo các vị
+                                    <p>Bể bơi Dookki Homestay là khu bể bơi ở Hà Nội hàng đầu, luôn được đông đảo các vị
                                         khách Hà thành ghé thăm. Đây là bể bơi vô cùng độc đáo với khả năng xoay
                                         chuyển nhiệt độ nước phù hợp với điều kiện thời tiết. Cái tên bể bơi bốn
                                         mùa cũng bắt nguồn từ đây. Ở Ciputra, nguồn nước được kiểm định kỹ càng,
@@ -362,13 +362,13 @@
                                 <div class="col-md-6">
                                     <span class="super-heading-sm">Đẳng cấp thể giới</span>
                                     <h3 class="heading">Spa</h3>
-                                    <p>SpaceX Spa sẵn sàng làm bạn ngạc nhiên với sự chăm sóc tỉ mỉ từ những chi
+                                    <p>Dookki Homestay Spa sẵn sàng làm bạn ngạc nhiên với sự chăm sóc tỉ mỉ từ những chi
                                         tiết nhỏ nhất, sự sạch sẽ tuyệt đối và dịch vụ bất ngờ.</p>
                                     <p>Điều khiến chúng tôi tự hào không chỉ là sự gia tăng về số lượng khách
                                         hàng, danh tiếng, doanh thu và sự hoàn thiện hơn về quy trình và chất
                                         lượng dịch vụ mà chính là sự gắn bó và nhiệt huyết sâu sắc. Chúng tôi
                                         tin rằng dịch vụ "hạnh phúc" chỉ đến từ những người hạnh phúc. Do đó,
-                                        quan tâm đến nhân viên là một trong những giá trị cốt lõi của SpaceX Spa.
+                                        quan tâm đến nhân viên là một trong những giá trị cốt lõi của Dookki Homestay Spa.
                                     </p>
                                     <p class="service-hour">
                                         <span>Giờ mở cửa</span>
@@ -387,9 +387,9 @@
                                 <div class="col-md-6">
                                     <span class="super-heading-sm">Đẳng cấp thể giới</span>
                                     <h3 class="heading">Gym</h3>
-                                    <p>SpaceX Gym - Một cái tên không thể bỏ qua khi nhắc tới những phòng tập gym
+                                    <p>Dookki Homestay Gym - Một cái tên không thể bỏ qua khi nhắc tới những phòng tập gym
                                         cao cấp Hà Nội. Với câu slogan độc đáo: “Hãy để Fitness World biến những
-                                        giọt mồ của bạn không còn lãng phí trên phòng tập”, SpaceX Gym đã và đang
+                                        giọt mồ của bạn không còn lãng phí trên phòng tập”, Dookki Homestay Gym đã và đang
                                         làm được điều đó. Với quy mô rộng lớn, phòng tập được trang bị đầy đủ từ
                                         cơ sở vật chất, dụng cụ tập luyện. Máy móc đều được nhập khẩu từ Mỹ theo
                                         tiêu chuẩn 5 sao.</p>
@@ -439,7 +439,7 @@
                 <div class="col-md-4">
                     <div class="testimony">
                         <blockquote>
-                            &ldquo;Gia đình tôi đã có những giây phút đầm ấm với nhau tại SpaceX&rdquo;
+                            &ldquo;Gia đình tôi đã có những giây phút đầm ấm với nhau tại Dookki Homestay&rdquo;
                         </blockquote>
                         <p class="author"><cite>Cô Giang</cite></p>
                     </div>

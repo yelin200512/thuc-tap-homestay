@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Trang quản trị</title>
+    <title>Quản trị - Dookki Homestay</title>
     <link href="{{ asset('font-end/admin/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('font-end/admin/css/metisMenu.min.css') }}" rel="stylesheet">
     <link href="{{ asset('font-end/admin/css/timeline.css') }}" rel="stylesheet">
@@ -25,7 +25,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-                <a class="navbar-brand" href="{{ route('admin.index') }}">AdminLTE</a>
+                <a class="navbar-brand" href="{{ route('admin.index') }}">Dookki Homestay</a>
             </div>
             <!-- Top Navigation: Left Menu -->
             <ul class="nav navbar-nav navbar-left navbar-top-links">
@@ -120,7 +120,158 @@
         <div id="page-wrapper">
             <div class="container-fluid">
                 <!-- ... Your content goes here ... -->
-                @yield('content')
+                @hasSection('content')
+    @yield('content')
+@else
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Bảng điều khiển - Dookki Homestay</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-home fa-4x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">{{ \Illuminate\Support\Facades\DB::table('phong')->count() }}</div>
+                                    <div>Căn Homestay</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{{ url('admin/phong/danhsach') }}">
+                            <div class="panel-footer">
+                                <span class="pull-left">Xem danh sách căn</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-th-large fa-4x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">{{ \Illuminate\Support\Facades\DB::table('loaiphong')->count() }}</div>
+                                    <div>Phân khúc lưu trú</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{{ url('admin/loaiphong/danhsach') }}">
+                            <div class="panel-footer">
+                                <span class="pull-left">Quản lý loại căn</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-calendar-check-o fa-4x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">{{ \Illuminate\Support\Facades\DB::table('datphong')->count() }}</div>
+                                    <div>Đơn đặt phòng</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{{ url('admin/chitietdp/danhsach') }}">
+                            <div class="panel-footer">
+                                <span class="pull-left">Xem danh sách đặt</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-users fa-4x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">{{ \Illuminate\Support\Facades\DB::table('users')->count() }}</div>
+                                    <div>Tài khoản hệ thống</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="{{ url('admin/user/danhsach') }}">
+                            <div class="panel-footer">
+                                <span class="pull-left">Quản lý tài khoản</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-list fa-fw"></i> Tình trạng các căn tại Dookki Homestay
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Tên căn Homestay</th>
+                                            <th>Phân khúc</th>
+                                            <th>Giá / đêm</th>
+                                            <th>Tổng số căn</th>
+                                            <th>Đã đặt</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @php
+                                            $dsCan = \Illuminate\Support\Facades\DB::table('phong')
+                                                ->join('loaiphong', 'phong.loaiphong_id', '=', 'loaiphong.id')
+                                                ->select('phong.*', 'loaiphong.tenloaiphong')
+                                                ->orderBy('phong.loaiphong_id')
+                                                ->get();
+                                        @endphp
+                                        @foreach($dsCan as $can)
+                                            <tr>
+                                                <td>{{ $can->id }}</td>
+                                                <td><strong>{{ $can->tenphong }}</strong></td>
+                                                <td>{{ $can->tenloaiphong }}</td>
+                                                <td>{{ number_format($can->gia, 0, ',', '.') }} VNĐ</td>
+                                                <td>{{ $can->soluong }}</td>
+                                                <td>{{ $can->booked ?? 0 }}</td>
+                                            </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
 
             </div>
         </div>

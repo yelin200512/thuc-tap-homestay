@@ -12,10 +12,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Khách Sạn SpaceX</title>
+    <title>Dookki Homestay</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
-    <meta name="keywords" content="hotel, SpaceX" />
+    <meta name="keywords" content="hotel, Dookki Homestay" />
     <meta name="author" content="FREEHTML5.CO" />
 
     <!-- Facebook and Twitter integration -->
@@ -70,7 +70,7 @@
                     <div class="container">
                         <div class="nav-header">
                             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-                            <h1 id="fh5co-logo"><a href="{{ route('website') }}">SpaceX</a></h1>
+                            <h1 id="fh5co-logo"><a href="{{ route('website') }}">Dookki Homestay</a></h1>
                             <nav id="fh5co-menu-wrap" role="navigation">
                                 <ul class="sf-menu" id="fh5co-primary-menu">
                                     <li><a href="{{ route('website') }}">Trang chủ</a></li>
@@ -96,13 +96,11 @@
                     <div class="row">
                         <div class="col-md-3">
                             <div class="copyright">
-                                <p><small>&copy; Khách sạn SpaceX. <br>
-                                        Thiết kế bởi <a href="" target="_blank">Khóa luận tốt nghiệp</a></small></p>
+                                <p><small>&copy; Dookki Homestay. <br>
+                                        Thiết kế bởi <a href="#">Anh em Alimi</a></small></p>
                                 <ul class="link">
-                                    <li><small><a href="">Lê Võ Quang Huy</a></small></li>
-                                    <!-- <li><small><a href="#">Đỗ Thị Ngọc Ánh</a></small></li>
-                                    <li><small><a href="#">Trịnh Thị Lan Anh</a></small></li>
-                                    <li><small><a href="#">Trần Nhật Long</a></small></li> -->
+                                    <li><small><a href="#">Ngọc Anh</a></small></li>
+                                    <li><small><a href="#">Hoàng alaykum</a></small></li>
                                 </ul>
                             </div>
                         </div>

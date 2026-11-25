@@ -381,7 +381,7 @@
                 <div class="nav-header">
                     <a href="{{ route('website') }}"><img src="{{ url('upload/page/logo.png') }}" alt="" width="100px"
                             height="100px"></a>
-                    <span> KHÁCH SẠN SpaceX</span>
+                    <span> Dookki Homestay</span>
                 </div>
             </div>
         </div>

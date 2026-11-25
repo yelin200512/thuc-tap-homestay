@@ -28,7 +28,7 @@
                     class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
                     <div class="fh5co-intro fh5co-table-cell">
                         <h1 class="text-center">LIÊN HỆ VỚI CHÚNG TÔI</h1>
-                        <p>Khách sạn SpaceX hân hạnh được phục vụ bạn</p>
+                        <p>Dookki Homestay hân hạnh được phục vụ bạn</p>
                     </div>
                 </div>
             </div>
@@ -40,8 +40,8 @@
             <div class="col-md-6">
                 <div id="map" class="fh5co-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.917360827114!2d105.78311011087006!3d21.075962580504317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aacc69cb4ef3%3A0xc15e246c76fd0b9e!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUw6BpIGNow61uaCAtIE5nw6JuIGjDoG5nIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1713958722346!5m2!1svi!2s"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        src="https://maps.google.com/maps?q=107%20L%C3%BD%20Th%C6%B0%E1%BB%9Dng%20Ki%E1%BB%87t%2C%20Th%C3%A0nh%20Vinh%2C%20Ngh%E1%BB%87%20An&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                     {{-- <img id="img3" src="{{ url('upload/slide/maps.png') }}" />
                     --}}
@@ -50,13 +50,13 @@
             <div class="col-md-6">
                 <div class="col-md-12">
                     <h3>ĐẾN VỚI CHÚNG TÔI</h3>
-                    <p>Hãy cùng gia đình và bạn bè đến với Khách sạn SpaceX để trải nghiệm những dịch vụ sang trọng, đẳng cấp
-                        nhất thể giới.</p>
+                    <p>Hãy cùng gia đình và bạn bè đến với Dookki Homestay để trải nghiệm những dịch vụ sang trọng, đẳng cấp
+                        nhất thế giới.</p>
                     <ul class="contact-info">
-                        <li><i class="ti-map"></i>Phạm Văn Đồng, Xuân Đỉnh, Bắc Từ Liêm, Hà Nội, Việt Nam</li>
-                        <li><i class="ti-mobile"></i>+84 888 88 66 66</li>
-                        <li><i class="ti-envelope"></i><a href="#">contact.SpaceXhotel@gmail.com</a></li>
-                        <li><i class="ti-home"></i><a href="{{ route('website') }}">www.SpaceXhotel.com</a></li>
+                        <li><i class="ti-map"></i>107 Lý Thường Kiệt, Thành Vinh, Nghệ An</li>
+                        <li><i class="ti-mobile"></i>+84 915689227</li>
+                        <li><i class="ti-envelope"></i><a href="#">contact.dookkihomestay@gmail.com</a></li>
+                        <li><i class="ti-home"></i><a href="{{ route('website') }}">www.dookkihomestay.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-12">
